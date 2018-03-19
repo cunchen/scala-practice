@@ -4,13 +4,13 @@ sealed trait Either[+E, +A] {
 
     def map[B](f: A => B): Either[E, B] = this match {
         case Right(a) => Right(f(a))
-        case _ => _
+        case Left(a) => Left(a)
     }
 
     def flatMap[EE >: E, B](f: A => Either[EE, B]): Either[EE, B] = {
         this.map(f) match {
             case Right(a) => a
-            case _ => _
+            case Left(a) => Left(a)
         }
     }
 

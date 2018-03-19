@@ -26,7 +26,7 @@ object EitherTest {
     }
 
     def sequence2[E, A](es: List[Either[E, A]]): Either[E, List[A]] = {
-        es.foldRight[Either[E,List[A]]](Right(Nil: List[A]))((x, y) => x.flatMap(hh => y.map(hh :: _))))
+        es.foldRight[Either[E,List[A]]](Right(Nil: List[A]))((x, y) => x.flatMap(hh => y.map(hh :: _)))
     }
 
     def traverse[E, A, B](as: List[A]) (f: A => Either[E, B]): Either[E, List[B]] = {
