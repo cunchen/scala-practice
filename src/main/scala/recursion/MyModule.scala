@@ -1,4 +1,4 @@
-package chapter2
+package recursion
 
 import scala.annotation.tailrec
 

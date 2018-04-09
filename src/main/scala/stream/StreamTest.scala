@@ -1,4 +1,4 @@
-package chapter5LazyEvaluate
+package stream
 
 object StreamTest {
 

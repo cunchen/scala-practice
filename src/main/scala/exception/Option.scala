@@ -1,4 +1,4 @@
-package chapter4Exception
+package exception
 
 sealed trait Option[+A] {
     def map[B](f: A => B): Option[B] = this match {

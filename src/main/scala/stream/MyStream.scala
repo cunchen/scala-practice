@@ -1,6 +1,6 @@
-package chapter5LazyEvaluate
+package stream
 
-import chapter4Exception.{None, Option, Some}
+import exception.{None, Option, Some}
 
 sealed trait MyStream[+A] {
 

@@ -1,5 +1,6 @@
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
+import scala.io.Source
 
 object FutureTest {
 
@@ -29,5 +30,8 @@ object FutureTest {
 
         sleep(1000)
         println("Finito!")
+
+
+        Source.fromFile("")
     }
 }

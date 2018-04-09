@@ -1,4 +1,4 @@
-package chapter4Exception
+package exception
 
 object EitherTest {
 
