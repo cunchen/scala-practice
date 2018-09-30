@@ -37,4 +37,14 @@ object EitherTest {
         }
     }
 
+    def main(args: Array[String]): Unit = {
+
+        val l: Either[String, Int] = Left("boo")
+        val r: Either[String, Int] = Right(12)
+
+        println(l.right)
+
+
+    }
+
 }

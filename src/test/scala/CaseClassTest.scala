@@ -63,6 +63,12 @@ object CaseClassTest {
             }
             println(str)
         }
+
+        copyTest
+
+        val re = "abc" + null
+        println(re)
+
     }
 
     def checkY(y: Int) = {
@@ -76,8 +82,17 @@ object CaseClassTest {
             println(str)
         }
     }
+
+    def copyTest(){
+        val a = CopyCaseClass("num1", "num2", 3)
+
+        println(s"copyTest: [${a.copy(b = "copyValue")}]")
+
+    }
 }
 
 case class A(id: Int)
 class B(id: Int)
+
+case class CopyCaseClass(a: String, b: String, c: Int)
 
