@@ -32,6 +32,6 @@ object SelfRecursiveTypes {
         println(Child2("c2"))
         println(Child2("c2").make)
 
-        compose
+//        compose
     }
 }
